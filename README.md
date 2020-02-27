@@ -10,4 +10,8 @@ bilibili番剧信息爬虫
 
 ### 运行
 
-    python begin.py
+    python begin.py  # 数据文件保存在AnimeSpider/AnimeSpider/spiders/output
+
+### 效果
+
+![](img/Screenshot.png)
