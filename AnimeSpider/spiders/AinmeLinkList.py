@@ -18,7 +18,7 @@ class AinmelinklistSpider(scrapy.Spider):
             ainme = json.loads(line)
             ainmename = ainme["name"]
             url = ainme["link"].replace("//", "https://")
-            yield scrapy.Request(url=url, callback=self.parse)
+            yield scrapy.Request(url=url, callback=self.parse, meta={'ainmename': ainmename})
 
     def parse(self, response):
         item = AnimespiderItem()
